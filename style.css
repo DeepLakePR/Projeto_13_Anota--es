@@ -1,0 +1,65 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #773e77;
+}
+
+.container-annotations{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.annotation-single{
+    width: 33.3%;
+    padding: 10px;
+}
+
+.annotation-single textarea{
+    width: 100%;
+    height: 150px;
+    max-height: 200px;
+    padding: 15px;
+    background: #ffe499;
+    color: black;
+    font-weight: bold;
+    resize: vertical;
+}
+
+.annotation-single textarea:focus{
+    outline: none;
+}
+
+.btn-add{
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    user-select: none;
+}
+
+.btn-add b{
+    font-size: 50px;
+    line-height: 60px;
+    color: rgb(88, 46, 88);
+}
+
+/*************/
+/* Responsive */
+@media screen and (max-width: 768px){
+    .annotation-single{
+        width: 100%;
+    }
+}
